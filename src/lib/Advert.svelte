@@ -1,5 +1,10 @@
+<script>
+    export let id = 'a65362'
+</script>
+
 <div>
     <slot />
+    <p>{id}</p>
 </div>
 
 <style>

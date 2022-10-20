@@ -1,8 +1,13 @@
 <script>
     import "../app.css";
+    import Nav from "$lib/Nav.svelte"
+
+    export let data;
+    const links = data.navmenu;
 </script>
 
 <div class="bg-img" />
+<Nav {links}></Nav>
 <slot />
 
 <style>

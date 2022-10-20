@@ -34,6 +34,7 @@
     }
     .banner h2 {
         padding: 0.5em 1em;
+        color: rgba(230, 228, 244, 0.874);
     }
     .banner p {
         font-family: 'Poppins', sans-serif;
