@@ -1,9 +1,36 @@
 <script>
     import List from "$lib/List.svelte";
 
-    let data = [{ title: "Cool Beer", url: "www.qubit.com.ng"}]
+    export let data
+    let results;
+
+    $: if (data && data.tmdb){
+        results = data.tmdb.results;
+        // console.log(results);
+    }
+
+    async function sendId(){
+        const sentId = await fetch('/api/movies/popular?language=en-US&page=4')
+        const resp = await sentId.json()
+        results = resp.results
+        console.log(resp.results.length)
+    }
+    
 </script>
 
 <div>
-    <List items={data}/>
+    {#if results}
+        <List items={results}/>
+    {/if}
+    <button on:click={sendId}>Get Movies</button>
 </div>
+
+<style>
+    div {
+        padding: 1em;
+    }
+    button {
+        padding: .5em;
+        font-size: .8em;
+    }
+</style>

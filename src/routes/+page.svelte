@@ -35,6 +35,7 @@
     .banner h2 {
         padding: 0.5em 1em;
         color: rgba(230, 228, 244, 0.874);
+        text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.4);
     }
     .banner p {
         font-family: 'Poppins', sans-serif;
