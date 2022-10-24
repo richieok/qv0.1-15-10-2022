@@ -16,6 +16,10 @@ export function load() {
             {
                 name: 'Shop',
                 href: '/shop'
+            },
+            {
+                name: 'svg',
+                href: '/svgtest'
             }
         ]
     }
