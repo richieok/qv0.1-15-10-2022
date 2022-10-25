@@ -104,9 +104,6 @@
         width: 132px;
         margin: 0px auto;
     }
-    svg {
-        background-color: white;
-    }
     button {
         height: 40px;
         width: 40px;
